@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head lang="pt-Br">
+        <meta charset="utf-8">
+        <title>FORMULÁRIO</title>
+        <link rel="stylesheet" type="text/css" href="estiliza%C3%A7%C3%A3o.css">
+    </head>
+    <body>
+        <h1><center>Formulário</center></h1>
+        <form action="" method="post" enctype="multipart/form-data">
+            <div>
+                <label for="">Nome</label>
+                <input name="Nome" required="required" placeholder="Digite seu nome" type="text">
+            </div>
+            
+            <div>
+                <label for="">E-mail</label>
+                <input name="email" required="required" placeholder="Digite seu email" type="text">
+            </div>
+            
+            <div>
+                <label for="">Selecione sua cidade</label>
+                
+                <select required="required" name="cidade">
+                <option selected="selected" value="">Selecione</option>
+                <option value="1">Belo Horizonte</option>
+                <option value="2">São Paulo</option>
+                <option value="3">Rio de Janeiro</option>
+                <option value="4">Brasília</option>
+                </select>
+            </div>
+            
+             <div>
+                <label for="">Sua foto</label>
+                <input required="required" name="foto" type="file"> 
+            </div>
+            
+            <div>
+                <p>Selecione seu sexo:</p>
+                <label for="sexo1"><input required="required" id="sexo1" name="sexo" value="m" type="radio"> Masculino</label>
+                <label for="sexo2"><input required="required" id="sexo2" name="sexo" value="f" type="radio"> Feminino</label>
+            </div>
+            
+            <div>
+                <label for="">Biografia:</label><br>
+                <textarea name="Biografia" cols="30" rows="5" placeholder="Digite sua biografia" required="required"></textarea>
+            </div>
+            
+            <div>
+                <label for="">Senha</label>
+                <input required="required" placeholder="Digite sua senha" name="Senha" type="password"> 
+            </div>
+            
+             <div>
+                <label for="noticias"><input required="required" id="noticias" name="newsletter" type="checkbox">Deseja receber e-mails promocionais? </label>
+            </div>
+            
+            <div>
+                <button name="Enviar" value="1" type="submit">Enviar</button>
+            </div>
+            
+            
+         
+        </form>
+    </body>
+</html>
